@@ -104,7 +104,7 @@
   h1 .c-ink    { color: var(--text-primary); }
 
   .subheadline {
-    font-size: 17px; font-weight: 300; line-height: 1.7;
+    font-size: 17px; line-height: 1.7;
     color: var(--text-primary); opacity: 0.7;
     margin: 0 auto 32px; max-width: 520px; text-align: center;
   }
@@ -129,7 +129,7 @@
   }
   .ba-label {
     font-family: 'Fraunces', serif; font-size: 14px; font-weight: 500;
-    color: var(--text-primary); opacity: 0.45; letter-spacing: 0.04em;
+    color: var(--text-primary); opacity: 0.8; letter-spacing: 0.04em;
   }
 
   .ba-panels {
@@ -165,13 +165,9 @@
   .pdf-l.a { width: 42%; background: var(--text-muted-18); }
 
   .ba-after {
-    background: var(--primary);
-    border-radius: 70px;
-    padding: 10px;
     position: relative;
     overflow: hidden;
     display: flex; align-items: center; justify-content: center;
-    border: 1px solid var(--border);
   }
   .ba-after-label {
     position: absolute; bottom: 16px; left: 0; right: 0;
@@ -217,11 +213,6 @@
     background: var(--primary);
     position: relative; overflow: hidden;
   }
-  .features-section::before {
-    content: ''; position: absolute;
-    top: -80px; right: -80px; width: 300px; height: 300px;
-    border-radius: 50%; background: var(--surface-overlay); pointer-events: none;
-  }
   .features-inner {
     max-width: 980px; margin: 0 auto;
     padding: 72px 40px;
@@ -244,7 +235,7 @@
     color: var(--surface) !important;
   }
 
-  .feature p { font-size: 14px; font-weight: 300; line-height: 1.65; color: var(--surface-strong); }
+  .feature p { font-size: 14px; line-height: 1.65; color: var(--surface-strong); }
 
   .bottom-cta {
     max-width: 980px; margin: 0 auto;
@@ -260,7 +251,7 @@
   .bottom-cta h2 .c-sage  { color: var(--primary); }
   .bottom-cta h2 .c-terra { color: var(--accent); }
 
-  .bottom-cta p { font-size: 16px; font-weight: 300; opacity: 0.65; margin-bottom: 36px; }
+  .bottom-cta p { font-size: 16px; opacity: 0.65; margin-bottom: 36px; }
 
   .cta-form-wrap { max-width: 600px; margin: 0 auto; }
   .cta-form-inner {
