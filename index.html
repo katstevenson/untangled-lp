@@ -5,61 +5,8 @@
 <title>Untangled - The better way to follow your knitting pattern</title>
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
 <style>
-  :root {
-    --background: #F5F1E8;
-    --surface: #FFFFFF;
-    --surface-muted: #D4CEC2;
-    --surface-soft: rgba(255,255,255,0.7);
-    --surface-strong: rgba(255,255,255,0.8);
-    --surface-overlay: rgba(255,255,255,0.08);
-    --primary: #4E7259;
-    --primary-muted: rgba(90,122,104,0.07);
-    --primary-muted-strong: rgba(90,122,104,0.15);
-    --primary-strong: rgba(90,122,104,0.9);
-    --primary-border: rgba(90,122,104,0.25);
-    --accent: #B87070;
-    --text-primary: #2E2F2C;
-    --text-muted: #6D6B67;
-    --border: #E8D5CA;
-    --text-muted-35: rgba(46,47,44,0.35);
-    --text-muted-20: rgba(46,47,44,0.2);
-    --text-muted-18: rgba(46,47,44,0.18);
-    --text-muted-10: rgba(46,47,44,0.1);
-  }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-
-  body {
-    background: var(--background);
-    color: var(--text-primary);
-    font-family: 'DM Sans', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-  }
-
-  body::before {
-    content: '';
-    position: fixed; inset: 0; pointer-events: none; z-index: 500;
-    opacity: 0.4;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='256' height='256' filter='url(%23g)' opacity='0.055'/%3E%3C/svg%3E");
-  }
-
-  nav {
-    padding: 24px 40px;
-    display: flex; align-items: center; justify-content: space-between;
-    max-width: 980px; margin: 0 auto;
-  }
-
-  .wordmark {
-    font-family: 'Fraunces', serif;
-    font-size: 26px; font-weight: 600;
-    color: var(--primary); letter-spacing: 0.01em;
-    text-decoration: none;
-  }
-  .wordmark span { color: var(--accent); }
-
   .nav-pill {
     background: var(--primary); color: var(--surface);
     font-family: 'DM Sans', sans-serif;
@@ -274,13 +221,6 @@
   }
   .cta-btn:hover { opacity: 0.88; }
 
-  footer {
-    border-top: 1px solid var(--border);
-    padding: 22px 40px;
-    text-align: center; font-family: 'Fraunces', serif;
-    font-size: 14px; color: var(--text-primary); opacity: 0.6;
-  }
-
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(16px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -290,7 +230,6 @@
   h1 { animation-delay: 0.12s; }
 
   @media (max-width: 680px) {
-    nav { padding: 18px 24px; }
     .hero { padding: 36px 24px 52px; }
     .ba-strip { padding: 0 24px 64px; }
     .ba-label-row {
@@ -344,7 +283,6 @@
     }
     .features-inner { grid-template-columns: 1fr; padding: 56px 24px; gap: 32px; }
     .bottom-cta { padding: 64px 24px; }
-    footer { padding: 18px 24px; }
     .formkit-powered-by-convertkit-container { display: none !important; }
   }
 </style>
